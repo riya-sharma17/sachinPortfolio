@@ -2,41 +2,46 @@
 import React from "react";
 import HeadingButton from "../ui/HeadingButton";
 import SkillCard from "../ui/SkillCard";
-const usingNowSkills: { name: string; icon: string }[] = [
-  { name: "Html5", icon: "/html.svg" },
-  { name: "CSS", icon: "/css.svg" },
-  { name: "Javascript", icon: "/js.svg" },
+
+const frontendSkills = [
+  { name: "HTML5", icon: "/html.svg" },
+  { name: "CSS3", icon: "/css.svg" },
+  { name: "JavaScript", icon: "/js.svg" },
   { name: "TypeScript", icon: "/typescript.svg" },
   { name: "React", icon: "/re.svg" },
-  { name: "Next", icon: "/next-js.svg" },
+  { name: "Next.js", icon: "/next-js.svg" },
   { name: "Tailwind CSS", icon: "/tailwind.svg" },
-  { name: "gsap", icon: "/gsap.svg" },
 ];
+
+const backendSkills = [
+  { name: "Node.js", icon: "/nodejs.svg" },
+  { name: "Express.js", icon: "/express-js.svg" },
+  { name: "MongoDB", icon: "/mongodb-icon.svg" },
+  { name: "NestJS", icon: "/nest js.png" },
+  { name: "Socket.io", icon: "/socket.png" },
+];
+
+const toolsSkills = [
+  { name: "GSAP", icon: "/gsap.svg" },
+  { name: "Git", icon: "/git.svg" },
+  { name: "Java", icon: "/java.svg" },
+  { name: "Python", icon: "/cpp.svg" },
+];
+
 const Skills = () => {
   return (
-    <div id="skills" className="w-full h-full flex flex-col gap-10 items-center justify-center bg-gray-background md:px-[20vw] px-10 py-20">
+    <section
+      id="skills"
+      className="w-full bg-gray-background md:px-[16vw] px-6 py-14 flex flex-col items-center gap-10"
+    >
       <HeadingButton text="Skills" />
-      <SkillCard heading="Using now:" usingNowSkills={usingNowSkills} />
-      <SkillCard
-        heading="Familiar with:"
-        usingNowSkills={[
-          { name: "Node.js", icon: "/nodejs.svg" },
-          { name: "Express.js", icon: "/express-js.svg" },
-          { name: "MongoDB", icon: "/mongodb-icon.svg" },
-          { name: "React Native", icon: "/react-native.svg" },
-        ]}
-      />
 
-      <SkillCard
-        heading="OTHER SKILLS:"
-        usingNowSkills={[
-          { name: "C", icon: "/c-icon.svg" },
-          { name: "C++", icon: "/cpp.svg" },
-          { name: "Java", icon: "/java.svg" },
-          { name: "Git", icon: "/git.svg" },
-        ]}
-      />
-    </div>
+      <div className="w-full flex flex-col gap-10">
+        <SkillCard heading="Frontend" usingNowSkills={frontendSkills} />
+        <SkillCard heading="Backend & APIs" usingNowSkills={backendSkills} />
+        <SkillCard heading="Tools & Libraries" usingNowSkills={toolsSkills} />
+      </div>
+    </section>
   );
 };
 

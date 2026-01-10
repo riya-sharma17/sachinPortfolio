@@ -47,7 +47,7 @@ const Footer = () => {
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
-        <a href="mailto:krishnamahato84044@gmail.com">
+        <a href="mailto:riyasharma.sde@gmail.com">
           <MagicButton
             title="Let's get in touch"
             icon={
@@ -64,8 +64,8 @@ const Footer = () => {
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center gap-5">
         <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2025 |
-          <span className="text-purple font-semibold"> Krishna Mahto ❤️</span>
+          Copyright © 2026 |
+          <span className="text-purple font-semibold"> Riya Sharma ❤️</span>
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">

@@ -67,9 +67,8 @@ const Navbar = () => {
   return (
     <nav
       ref={navbarRef}
-      className={`z-50  w-full flex justify-between items-center px-40 py-10 fixed top-0 left-0 transition-transform duration-300 ease-in-out ${
-        showNavbar ? "translate-y-0" : "-translate-y-full"
-      }`}
+      className={`z-50  w-full flex justify-between items-center px-40 py-10 fixed top-0 left-0 transition-transform duration-300 ease-in-out ${showNavbar ? "translate-y-0" : "-translate-y-full"
+        }`}
     >
       <div className="overflow-hidden">
         <div
@@ -78,10 +77,10 @@ const Navbar = () => {
           }}
           className="flex items-center gap-0.5 font-raleway text-background"
         >
-          <span className="font-bold text-3xl">R</span>
-          <span className="nav-link underline" style={{ color: "black" }}>
+          {/* <span className="font-bold text-5xl">R</span>
+          <span className="nav-link text-3xl" style={{ color: "black" }}>
             iya
-          </span>
+          </span> */}
         </div>
       </div>
       <div className="flex justify-center items-center gap-10 overflow-hidden">
@@ -102,6 +101,8 @@ const Navbar = () => {
           >
             {link.name}
           </Link>
+
+
         ))}
       </div>
     </nav>

@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function useLenis() {
   useEffect(() => {
-    const lenis = new Lenis(); // ✅ default config is smooth scrolling
+    const lenis = new Lenis(); // default config is smooth scrolling
 
     function raf(time: number) {
       lenis.raf(time);

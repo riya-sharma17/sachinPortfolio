@@ -16,7 +16,7 @@ const About = () => {
         </h1>
 
         <p className="font-open-sans text-sm text-justify z-10">
-          Hi, I’m Krishna 👋 — a full-stack developer who loves crafting
+          Hi, I’m Riya 👋 — a full-stack developer who loves crafting
           seamless user experiences and solving real-world problems through
           code. With expertise in React, Node.js, and TypeScript, I enjoy
           turning ideas into performant, maintainable applications. Whether
