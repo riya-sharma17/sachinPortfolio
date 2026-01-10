@@ -41,9 +41,9 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Krishna Mahto | Portfolio",
+  title: "Riya Sharma | Portfolio",
   keywords: [
-    "Krishna Mahto",
+    "Riya Sharma",
     "Portfolio",
     "Web Developer",
     "Software Engineer",
@@ -51,9 +51,9 @@ export const metadata: Metadata = {
     "Full Stack Developer",
   ],
   description:
-    "Welcome to my portfolio! I am Krishna Mahto, a passionate web developer with expertise in creating dynamic and responsive web applications. Explore my projects and skills.",
-  authors: [{ name: "Krishna Mahto", url: "https://krishnamahto.com" }],
-  creator: "Krishna Mahto",
+    "Welcome to my portfolio! I am Riya Sharma, a passionate web developer with expertise in creating dynamic and responsive web applications. Explore my projects and skills.",
+  authors: [{ name: "Riya Sharma", url: "https://riyasharma.com" }],
+  creator: "Riya Sharma",
 };
 
 export default function RootLayout({

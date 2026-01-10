@@ -78,9 +78,9 @@ const Navbar = () => {
           }}
           className="flex items-center gap-0.5 font-raleway text-background"
         >
-          <span className="font-bold text-3xl">K</span>
-          <span className="nav-link" style={{ color: "black" }}>
-            rishna
+          <span className="font-bold text-3xl">R</span>
+          <span className="nav-link underline" style={{ color: "black" }}>
+            iya
           </span>
         </div>
       </div>
