@@ -13,6 +13,7 @@
     "@studio-freight/lenis": "^1.0.42",
     "clsx": "^2.1.1",
     "gsap": "^3.13.0",
+    "lucide-react": "^0.562.0",
     "motion": "^12.23.6",
     "next": "^16.1.1",
     "react": "^19.2.3",
