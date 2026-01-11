@@ -119,7 +119,7 @@ export const expCards: ExperienceCard[] = [
     title: "Web Development Intern",
     date: "Jul 2024 – Aug 2024",
     responsibilities: [
-      "Completed a 3-month intensive MERN stack training (MongoDB, Express.js, React.js, Node.js).",
+      "Completed a 2-month intensive MERN stack training (MongoDB, Express.js, React.js, Node.js).",
       "Built multiple mini-projects focusing on RESTful APIs, authentication, and responsive UI design.",
       "Learned full-stack integration with proper folder structure, component architecture, and best coding practices.",
     ],
