@@ -172,28 +172,36 @@
 
 "use client";
 import Image from "next/image";
-import React from "react";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen bg-black overflow-hidden pt-24 md:pt-0">
+    <section className="relative min-h-screen bg-black overflow-hidden">
+      
+      {/* GREY GRADIENT BACKGROUND */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#1f1f1f] via-black to-black" />
 
-      {/* RIGHT SKEW BACKGROUND */}
-      <div className="absolute top-0 right-0 w-[55%] h-full hidden md:block">
-        <div className="absolute inset-0 bg-black -skew-x-6 origin-top-right rounded-l-[3rem]" />
+      {/* DIAGONAL GREY OVERLAY */}
+      <div className="absolute top-0 right-[-20%] w-[70%] h-full hidden md:block">
+        <div className="absolute inset-0 bg-gradient-to-l from-[#2a2a2a] to-black -skew-x-12 rounded-l-[4rem]" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 min-h-screen flex flex-col md:flex-row items-center gap-12">
-
-        {/* LEFT CONTENT */}
-        <div className="w-full md:w-1/2 text-white text-center md:text-left">
-          <h2 className="text-gray-300 text-lg">Hi, I am</h2>
+        
+        {/* LEFT TEXT */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="w-full md:w-1/2 text-white text-center md:text-left"
+        >
+          <h2 className="text-gray-400 text-lg">Hi, I am</h2>
 
           <h1 className="text-4xl md:text-5xl font-bold mt-3">
             Sachin Sharma
           </h1>
 
-          <p className="mt-2 text-gray-200 text-lg">
+          <p className="mt-2 text-gray-300 text-lg">
             Accountant | GST & Income Tax Consultant
           </p>
 
@@ -202,18 +210,16 @@ const Hero = () => {
             with reliable accounting and taxation services.
           </p>
 
-          {/* SERVICES */}
           <div className="mt-6 space-y-2 text-sm text-gray-300">
             <p>✔ GST & Income Tax Filing</p>
             <p>✔ GST & UDYAM Registration</p>
             <p>✔ Tally & BUSY Accounting</p>
           </div>
 
-          {/* CTA */}
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
               href="tel:+917006825695"
-              className="px-6 py-3 bg-amber-600 hover:bg-amber-700 transition text-white rounded-md text-sm font-semibold shadow text-center"
+              className="px-6 py-3 bg-orange-600 hover:bg-orange-700 transition text-white rounded-md text-sm font-semibold shadow"
             >
               Call Now
             </a>
@@ -221,7 +227,7 @@ const Hero = () => {
             <a
               href="https://wa.me/917006825695"
               target="_blank"
-              className="px-6 py-3 border border-amber-600 text-amber-400 hover:bg-amber-600/10 transition rounded-md text-sm font-semibold text-center"
+              className="px-6 py-3 border border-orange-500 text-orange-400 hover:bg-orange-500/10 transition rounded-md text-sm font-semibold"
             >
               WhatsApp
             </a>
@@ -230,11 +236,16 @@ const Hero = () => {
           <p className="text-xs mt-5 text-gray-500">
             Bari Brahmana, Jammu & Kashmir
           </p>
-        </div>
+        </motion.div>
 
         {/* RIGHT IMAGE */}
-        <div className="w-full md:w-1/2 flex justify-center relative">
-          <div className="relative bg-black rounded-3xl p-6 shadow-2xl">
+        <motion.div
+          initial={{ opacity: 0, x: 60 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.9, delay: 0.1 }}
+          className="w-full md:w-1/2 flex justify-center relative"
+        >
+          <div className="relative rounded-3xl p-6 bg-gradient-to-br from-[#222] to-black shadow-2xl">
             <Image
               src="/sachinn.png"
               alt="Sachin Sharma"
@@ -243,8 +254,12 @@ const Hero = () => {
               priority
               className="rounded-2xl object-contain"
             />
+
+            {/* IMAGE GLOW */}
+            <div className="absolute inset-0 rounded-3xl shadow-[0_0_60px_rgba(255,165,0,0.15)] pointer-events-none" />
           </div>
-        </div>
+        </motion.div>
+
       </div>
     </section>
   );
