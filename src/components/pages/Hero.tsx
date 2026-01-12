@@ -170,56 +170,46 @@
 
 // export default Hero;
 
-
 "use client";
 import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
   return (
-    <section className="bg-[#F3F4F6] min-h-screen pt-24 md:pt-0">
-      <div className="max-w-7xl mx-auto px-6 md:px-16 min-h-screen flex flex-col md:flex-row items-center justify-between gap-12">
-        
-        {/* IMAGE — shows FIRST on mobile */}
-        <div className="order-1 md:order-2 w-full md:w-1/2 flex justify-center">
-          <Image
-            src="/sachinn.png"
-            alt="Sachin Sharma"
-            width={380}
-            height={380}
-            priority
-            className="
-              rounded-2xl shadow-xl
-              max-w-[80%] sm:max-w-[60%] md:max-w-full
-            "
-          />
-        </div>
+    <section className="relative min-h-screen bg-black overflow-hidden pt-24 md:pt-0">
 
-        {/* CONTENT */}
-        <div className="order-2 md:order-1 w-full md:w-1/2 text-center md:text-left">
-          <h2 className="text-gray-600 text-lg">Hi, I am</h2>
+      {/* RIGHT SKEW BACKGROUND */}
+      <div className="absolute top-0 right-0 w-[55%] h-full hidden md:block">
+        <div className="absolute inset-0 bg-black -skew-x-6 origin-top-right rounded-l-[3rem]" />
+      </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mt-2">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 min-h-screen flex flex-col md:flex-row items-center gap-12">
+
+        {/* LEFT CONTENT */}
+        <div className="w-full md:w-1/2 text-white text-center md:text-left">
+          <h2 className="text-gray-300 text-lg">Hi, I am</h2>
+
+          <h1 className="text-4xl md:text-5xl font-bold mt-3">
             Sachin Sharma
           </h1>
 
-          <p className="mt-2 text-gray-800 font-medium text-lg">
+          <p className="mt-2 text-gray-200 text-lg">
             Accountant | GST & Income Tax Consultant
           </p>
 
-          <p className="mt-4 text-sm text-gray-600 max-w-md mx-auto md:mx-0">
+          <p className="mt-4 text-sm text-gray-400 max-w-md mx-auto md:mx-0">
             Helping businesses stay compliant, accurate, and stress-free
             with reliable accounting and taxation services.
           </p>
 
           {/* SERVICES */}
-          <div className="mt-6 text-sm space-y-2 text-gray-700">
+          <div className="mt-6 space-y-2 text-sm text-gray-300">
             <p>✔ GST & Income Tax Filing</p>
             <p>✔ GST & UDYAM Registration</p>
             <p>✔ Tally & BUSY Accounting</p>
           </div>
 
-          {/* CTA BUTTONS */}
+          {/* CTA */}
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
               href="tel:+917006825695"
@@ -231,16 +221,29 @@ const Hero = () => {
             <a
               href="https://wa.me/917006825695"
               target="_blank"
-              className="px-6 py-3 border border-amber-600 text-amber-700 hover:bg-amber-50 transition rounded-md text-sm font-semibold text-center"
+              className="px-6 py-3 border border-amber-600 text-amber-400 hover:bg-amber-600/10 transition rounded-md text-sm font-semibold text-center"
             >
               WhatsApp
             </a>
           </div>
 
-          {/* LOCATION */}
           <p className="text-xs mt-5 text-gray-500">
             Bari Brahmana, Jammu & Kashmir
           </p>
+        </div>
+
+        {/* RIGHT IMAGE */}
+        <div className="w-full md:w-1/2 flex justify-center relative">
+          <div className="relative bg-black rounded-3xl p-6 shadow-2xl">
+            <Image
+              src="/sachinn.png"
+              alt="Sachin Sharma"
+              width={420}
+              height={420}
+              priority
+              className="rounded-2xl object-contain"
+            />
+          </div>
         </div>
       </div>
     </section>
