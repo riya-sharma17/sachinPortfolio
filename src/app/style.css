@@ -282,17 +282,17 @@
     /* background-color: var(--background); */
     background: white;
   }
-
-  .hero-image-wrapper {
+/* 
+  .hero-image-wrapper { */
     /* height: 100%;
     width: 100%;
     display: flex; */
 
     /* justify-content: flex-end;
     align-items: flex-end; */
-  }
-
-  .hero-image {
+  /* } */
+/* 
+  .hero-image { */
     /* position: absolute;
     right: -50;
     bottom: 0;
@@ -301,7 +301,7 @@
     object-fit: cover; */
     /* z-index: 20; */
   }
-}
+/* } */
 
 /* Medium devices (landscape tablets) */
 @media (min-width: 768px) {
