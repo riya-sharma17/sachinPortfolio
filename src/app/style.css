@@ -227,6 +227,7 @@
     line-height: 5vw;
     color: var(--foreground);
     z-index: 999;
+    margin-top: 4vw; 
   }
 
   .hero-name-container {
@@ -236,7 +237,7 @@
 
   .hero-heading {
     font-weight: bold;
-    font-size: 8vw;
+    font-size: 6vw;
     line-height: 1;
     color: var(--foreground);
     z-index: 999;
