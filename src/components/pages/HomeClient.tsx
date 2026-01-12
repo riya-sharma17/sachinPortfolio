@@ -8,7 +8,7 @@ import Footer from "./Footer";
 import Experience from "./Experience";
 import Hero from "./Hero";
 import About from "./About";
-import RecentProjects from "./RecentProjects";
+import RecentProjects from "./Services";
 
 const HomeClient = () => {
   useLenis();

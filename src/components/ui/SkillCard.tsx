@@ -1,35 +1,59 @@
 "use client";
 import Image from "next/image";
-import React from "react";
 
-const SkillCard = ({
-  heading,
-  usingNowSkills,
-}: {
+interface SkillCardProps {
   heading: string;
   usingNowSkills: { name: string; icon: string }[];
-}) => {
+}
+
+const SkillCard = ({ heading, usingNowSkills }: SkillCardProps) => {
   return (
-    <div className="flex flex-col gap-10  w-full px-[5vw]">
-      <h1 className="header pl-10">{heading}</h1>
-      <div className="grid grid-cols-2 md:grid-cols-4 justify-between gap-10  w-full">
-        {usingNowSkills.map((skill, index) => {
-          return (
-            <span key={index} className="flex flex-col items-center gap-2">
-              <Image
-                src={skill.icon}
-                alt={skill.name}
-                height={10}
-                width={10}
-                className="w-10 h-10 md:w-15 md:h-15 skill-icon"
-              />
-              <span className="text-sm md:text-base uppercase text-background tracking-widest font-[100] text-center">
-                {skill.name}
-              </span>
-            </span>
-          );
-        })}
+    <div
+      className="
+        group
+        w-full
+        rounded-2xl
+        bg-gradient-to-br from-[#111] to-[#1a1a1a]
+        p-10
+        flex flex-col items-center gap-6
+        border border-white/5
+        transition-all duration-300
+        hover:-translate-y-3
+        hover:shadow-[0_30px_60px_rgba(0,0,0,0.5)]
+        hover:border-yellow-400/30
+      "
+    >
+      {/* ICON */}
+      <div
+        className="
+    relative
+    w-28 h-28
+    rounded-2xl
+    bg-black/30
+    flex items-center justify-center
+    overflow-hidden
+    transition-all duration-300
+    group-hover:scale-105
+  "
+      >
+
+        <Image
+          src={usingNowSkills[0].icon}
+          alt={heading}
+          fill
+          className="object-contain p-4"
+        />
       </div>
+
+
+      {/* ACCENT LINE */}
+      <div className="w-8 h-[2px] bg-yellow-400 rounded-full transition-all duration-300 group-hover:w-14" />
+
+      <h3 className="text-xs sm:text-sm tracking-[0.2em] sm:tracking-[0.35em] text-gray-200 text-center">
+
+        {heading.toUpperCase()}
+      </h3>
+
     </div>
   );
 };

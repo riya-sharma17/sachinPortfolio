@@ -121,7 +121,7 @@ import { Menu, X } from "lucide-react";
 const NavLinks = [
   { name: "About Me", href: "#about" },
   { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
+  { name: "Services", href: "#projects" },
   { name: "Contact Me", href: "#contact" },
 ];
 
@@ -180,7 +180,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between px-6 py-4 md:px-24 backdrop-blur-md">
     
         <div className="text-xl font-semibold">
-          Riya
+          Sachin
         </div>
 
         <div className="hidden md:flex gap-10">

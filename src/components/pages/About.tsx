@@ -15,7 +15,7 @@ const About = () => {
           CREATING MODERN DIGITAL EXPERIENCES
         </h1>
 
-        <p className="font-open-sans text-sm text-justify z-10">
+        {/* <p className="font-open-sans text-sm text-justify z-10">
           Hi, I’m Riya 👋 — a full-stack developer who loves crafting
           seamless user experiences and solving real-world problems through
           code. With expertise in React, Node.js, and TypeScript, I enjoy
@@ -28,6 +28,18 @@ const About = () => {
         {/* <button className="font-montserrat uppercase border-l-2 border-r-2 px-5 font-semibold cursor-pointer">
           READ MORE
         </button> */}
+        {/* </div> */}
+        <p className="font-open-sans text-sm text-justify z-10">
+          Hi, I’m <strong>Sachin Sharma</strong> 👋 — an experienced Accountant with
+          over 2 years of hands-on expertise in GST filing, account maintenance,
+          and income tax return preparation. I have worked with reputed CA firms,
+          where accuracy, compliance, and timely reporting were my top priorities.
+          <br /><br />
+          I am proficient in accounting software such as <strong>Tally ERP 9, Tally Prime,
+            BUSY</strong>, along with Microsoft Office tools. Known for being reliable,
+          analytical, and organized, I aim to contribute effectively to an
+          organization that values dedication, efficiency, and professional growth.
+        </p>
       </div>
       <div className="absolute -right-10">
         <Image

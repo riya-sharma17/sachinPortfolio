@@ -3,24 +3,21 @@
 import Image from "next/image";
 import MagicButton from "../ui/MagicButton";
 
-export const socialMedia = [
-  {
-    id: 1,
-    img: "/github-light.svg",
-  },
-  {
-    id: 2,
-    img: "/twit.svg",
-  },
-  {
-    id: 3,
-    img: "/link.svg",
-  },
-  {
-    id: 4,
-    img: "/insta.svg",
-  },
-];
+// export const socialMedia = [
+//   {
+//     id: 1,
+//     img: "/whatsaap.png",
+//     link: "https://wa.me/917006825695",
+//     label: "WhatsApp",
+//   },
+//   {
+//     id: 2,
+//     img: "/email.svg",
+//     link: "mailto:sharmasachin9177@gmail.com",
+//     label: "Email",
+//   },
+// ];
+
 const Footer = () => {
   return (
     <footer
@@ -47,7 +44,7 @@ const Footer = () => {
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
-        <a href="mailto:riyasharma.sde@gmail.com">
+        <a href="mailto:sharmasachin9177@gmail.com">
           <MagicButton
             title="Let's get in touch"
             icon={
@@ -65,11 +62,11 @@ const Footer = () => {
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center gap-5">
         <p className="md:text-base text-sm md:font-normal font-light">
           Copyright © 2026 |
-          <span className="text-purple font-semibold"> Riya Sharma ❤️</span>
+          <span className="text-purple font-semibold"> Sachin ❤️</span>
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
-          {socialMedia.map((info) => (
+          {/* {socialMedia.map((info) => (
             // <BounceAnimation key={info.id}>
             <div
               key={info.id}
@@ -78,7 +75,7 @@ const Footer = () => {
               <img src={info.img} alt="icons" width={20} height={20} />
             </div>
             // </BounceAnimation>
-          ))}
+          ))} */}
         </div>
       </div>
     </footer>
