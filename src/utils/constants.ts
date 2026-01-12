@@ -209,9 +209,9 @@ export type ExperienceCard = {
 export const expCards: ExperienceCard[] = [
   {
     review:
-      "Sachin is a dependable and detail-oriented accountant with hands-on experience in GST compliance, income tax filing, and day-to-day accounting operations. His accuracy and discipline ensure smooth financial management.",
+      "Sachin is a dependable and detail-oriented accountant with strong hands-on experience in GST compliance, income tax filing, and day-to-day accounting operations. His accuracy and discipline ensure smooth financial management and statutory compliance.",
     title: "Accountant — Sanjiv Structure Pvt. Ltd.",
-    date: "2024 – Present",
+    date: "October 2025 – Present",
     responsibilities: [
       "Currently working at Sanjiv Structure Pvt. Ltd., Birpur, Bari Brahmana, Jammu & Kashmir.",
       "Handling GST returns and Income Tax Return (ITR) filing.",
@@ -222,18 +222,32 @@ export const expCards: ExperienceCard[] = [
   },
   {
     review:
-      "During his tenure at CA Nitin Gupta & Associates, Sachin developed strong fundamentals in accounting, taxation, and compliance while working in a professional CA firm environment.",
-    title: "Accounts Executive — CA Nitin Gupta & Associates",
-    date: "2022 – 2024",
+      "During his tenure at Varun Mahajan & Associates, Sachin demonstrated professionalism, sincerity, and dedication while handling accounting records, reconciliations, and day-to-day finance operations.",
+    title: "Accountant — Varun Mahajan & Associates",
+    date: "June 2024 – October 2025",
     responsibilities: [
-      "Worked at CA Nitin Gupta & Associates, Jammu.",
-      "Assisted in GST filing, income tax returns, and audit-related work.",
+      "Worked as an Accountant at Varun Mahajan & Associates.",
+      "Handled accounting tasks and maintained financial records.",
+      "Assisted in reconciliation activities and reporting.",
+      "Supported day-to-day finance and operational accounting work.",
+      "Ensured accuracy and completeness of financial data.",
+    ],
+  },
+  {
+    review:
+      "While working at CA Nitin Gupta & Associates, Sachin built strong fundamentals in accounting, taxation, and audit-related work in a professional CA firm environment.",
+    title: "Accounts Assistant — CA Nitin Gupta & Associates",
+    date: "February 2022 – June 2024",
+    responsibilities: [
+      "Worked as an Audit & Accounts Assistant at CA Nitin Gupta & Associates, Jammu.",
+      "Assisted in GST returns, income tax filing, and audit assignments.",
       "Prepared and maintained books of accounts and financial records.",
-      "Handled GST registration, UDYAM registration, and statutory forms.",
-      "Supported senior accountants with compliance and reporting tasks.",
+      "Handled GST registration, UDYAM registration, and statutory documentation.",
+      "Gained hands-on experience with Tally and BUSY accounting software.",
     ],
   },
 ];
+
 
 // ================= HERO ICONS (NO GITHUB / LEETCODE) =================
 export const HeroIcons: {
