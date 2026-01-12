@@ -285,4 +285,11 @@ export const services = [
     des: "Professional bookkeeping and accounting using Tally ERP 9, Tally Prime, and BUSY.",
     icon: "/taly.png",
   },
+  {
+    id: 4,
+
+    title: "Financial Consultation",
+    des: "Expert advice on financial planning, tax strategies, and compliance matters.",
+    icon: "/conss.jpg",
+  },
 ];
