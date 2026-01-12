@@ -31,7 +31,7 @@ const About = () => {
         {/* </div> */}
         <p className="font-open-sans text-sm text-justify z-10">
           Hi, I’m <strong>Sachin Sharma</strong> 👋 — an experienced Accountant with
-          over 2 years of hands-on expertise in GST filing, account maintenance,
+          over 3.5 years of hands-on expertise in GST filing, account maintenance,
           and income tax return preparation. I have worked with reputed CA firms,
           where accuracy, compliance, and timely reporting were my top priorities.
           <br /><br />
