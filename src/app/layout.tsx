@@ -41,19 +41,20 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Riya Sharma | Portfolio",
+  title: "Sachin Sharma | Portfolio",
   keywords: [
-    "Riya Sharma",
+    "Sachin Sharma",
     "Portfolio",
-    "Web Developer",
-    "Software Engineer",
-    "Frontend Developer",
-    "Full Stack Developer",
+    "Accountant",
+    "GST Consultant",
+    "Income Tax Consultant",
+    "sachinsharma.com",
   ],
   description:
-    "Welcome to my portfolio! I am Riya Sharma, a passionate web developer with expertise in creating dynamic and responsive web applications. Explore my projects and skills.",
-  authors: [{ name: "Riya Sharma", url: "https://riyasharma.com" }],
-  creator: "Riya Sharma",
+    "I am an experienced Accountant with over 2 years of hands-on expertise in GST filing, account maintenance, and income tax return preparation. Having worked with reputed CA firms, I prioritize accuracy, compliance, and timely reporting in all my work. Explore my profile to learn more about my professional journey and skills.",
+
+  authors: [{ name: "Sachin Sharma", url: "https://sachinsharma.com" }],
+  creator: "Sachin Sharma",
 };
 
 export default function RootLayout({
