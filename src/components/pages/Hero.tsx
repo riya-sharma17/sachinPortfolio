@@ -83,7 +83,6 @@
 
 // "use client";
 // import Image from "next/image";
-// import React from "react";
 
 // const Hero = () => {
 //   return (
@@ -170,7 +169,6 @@
 
 // export default Hero;
 
-
 "use client";
 import Image from "next/image";
 import React from "react";
@@ -179,8 +177,7 @@ const Hero = () => {
   return (
     <div className="hero-container bg-[#F3F4F6]">
       {/* LEFT */}
-      <div className="hero-left">
-        {/* SHOW ON BOTH */}
+      <div className="hero-left relative z-20">
         <h2 className="hero-subheading text-gray-700">
           Hi, I am
         </h2>
@@ -195,7 +192,7 @@ const Hero = () => {
           </p>
         </div>
 
-        {/* DESKTOP ONLY CONTENT */}
+        {/* DESKTOP ONLY */}
         <p className="text-sm mt-3 text-gray-600 max-w-md hidden md:block">
           Helping businesses stay compliant, accurate, and stress-free
           with reliable accounting and taxation services.
@@ -207,8 +204,8 @@ const Hero = () => {
           <p>✔ Tally & BUSY Accounting</p>
         </div>
 
-        {/* CTA BUTTONS – SHOW ON BOTH */}
-        <div className="mt-7 flex gap-4">
+        {/* DESKTOP CTA */}
+        <div className="mt-7 gap-4 hidden md:flex">
           <a
             href="tel:+917006825695"
             className="px-6 py-2.5 bg-amber-600 hover:bg-amber-700 transition text-white rounded-md text-sm font-semibold shadow"
@@ -230,17 +227,36 @@ const Hero = () => {
           Bari Brahmana, Jammu & Kashmir
         </p>
 
-        {/* MOBILE DECORATION (UNCHANGED) */}
-        <div className="mobile-skew-container">
+        {/* MOBILE CTA (CLEAN & VISIBLE) */}
+        <div className="flex md:hidden gap-4 mt-6 z-50">
+          <a
+            href="tel:+917006825695"
+            className="px-5 py-2 bg-amber-600 text-white rounded-md text-sm font-semibold shadow"
+          >
+            Call Now
+          </a>
+
+          <a
+            href="https://wa.me/917006825695"
+            className="px-5 py-2 border border-amber-600 text-amber-600 rounded-md text-sm font-semibold"
+          >
+            WhatsApp
+          </a>
+        </div>
+
+        {/* MOBILE DECORATION */}
+        <div className="mobile-skew-container md:block">
           <div className="mobile-skew"></div>
         </div>
-        <div className="mobile-skew-container-overlay">
+
+        {/* 🔥 IMPORTANT: hide overlay on mobile */}
+        <div className="mobile-skew-container-overlay hidden md:block">
           <div className="mobile-skew-overlay"></div>
         </div>
       </div>
 
       {/* RIGHT */}
-      <div className="hero-right">
+      <div className="hero-right relative z-10">
         <div className="hero-bg-skew-container">
           <div className="hero-bg-skew bg-amber-600/10" />
         </div>
@@ -252,6 +268,7 @@ const Hero = () => {
             width={400}
             height={400}
             className="hero-image rounded-xl shadow-lg"
+            priority
           />
         </div>
       </div>
